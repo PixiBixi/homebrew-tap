@@ -5,21 +5,21 @@
 class Gopen < Formula
   desc "Open your git repository in the browser at the current branch and directory"
   homepage "https://github.com/PixiBixi/gopen"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PixiBixi/gopen/releases/download/v1.4.0/gopen_1.4.0_Darwin_x86_64.tar.gz"
-      sha256 "0bd8e81dc81c736b9eeddbde5fd83081d3bba796df761e003fd3b303c60b2b52"
+      url "https://github.com/PixiBixi/gopen/releases/download/v1.5.0/gopen_1.5.0_Darwin_x86_64.tar.gz"
+      sha256 "95ae4c71e14728e6385922fd40fd437eb83df869f1b84f16691d5c5912e08dc1"
 
       define_method(:install) do
         bin.install "gopen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PixiBixi/gopen/releases/download/v1.4.0/gopen_1.4.0_Darwin_arm64.tar.gz"
-      sha256 "bb27a691a219dc689fd78fb15b61ab5aa88d6b799f6526ebffe37ba8d88195ab"
+      url "https://github.com/PixiBixi/gopen/releases/download/v1.5.0/gopen_1.5.0_Darwin_arm64.tar.gz"
+      sha256 "4b5f2f15b2e6d7aaf6dc8ed3d5473a43ded82e9fe3483d710b4db489e9412062"
 
       define_method(:install) do
         bin.install "gopen"
@@ -29,15 +29,15 @@ class Gopen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PixiBixi/gopen/releases/download/v1.4.0/gopen_1.4.0_Linux_x86_64.tar.gz"
-      sha256 "5eace8fd49d268efda929911aace9217ddbe252e57936d012d55ac2b49e53b3d"
+      url "https://github.com/PixiBixi/gopen/releases/download/v1.5.0/gopen_1.5.0_Linux_x86_64.tar.gz"
+      sha256 "1d198bf38cb4e79d7f6aef53928c8216998ef07b1d22235c10f41a7980665482"
       define_method(:install) do
         bin.install "gopen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PixiBixi/gopen/releases/download/v1.4.0/gopen_1.4.0_Linux_arm64.tar.gz"
-      sha256 "cd5151cfd31afc9ffe53d00aeb6e457e7a87d9b6e6aaf5890a7775c43cef5075"
+      url "https://github.com/PixiBixi/gopen/releases/download/v1.5.0/gopen_1.5.0_Linux_arm64.tar.gz"
+      sha256 "be6be4728cf8c78a4c26d0f8bc200d69c30dd3f6a15833ea36b441390f284c9f"
       define_method(:install) do
         bin.install "gopen"
       end
