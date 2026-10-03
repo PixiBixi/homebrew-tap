@@ -33,5 +33,7 @@ cask "tickler" do
   caveats <<~EOS
     Open Tickler once: it asks for notifications and calendar access,
     and lets you pick your terminal and the live status tools.
+    Then teach Claude Code to use it (also offered in the setup assistant):
+      tickler skill install
   EOS
 end
