@@ -1,6 +1,6 @@
 cask "tickler" do
-  version "0.12.0"
-  sha256 "68f0457c965f20240b09c8ea196e0763f79eba67b418b161ef79fb890ed3cd9c"
+  version "0.13.0"
+  sha256 "dcaadbd42b2a5105cf4f83a139ccd3c63b7a7dc896fa78ef0c0eece7ef58cf51"
 
   url "https://github.com/PixiBixi/tickler/releases/download/v#{version}/tickler-#{version}.zip"
   name "Tickler"
