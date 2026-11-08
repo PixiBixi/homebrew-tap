@@ -6,25 +6,25 @@ cask "gopen" do
     end
   end
 
-  version "1.5.6"
+  version "1.5.7"
 
   on_macos do
     on_arm do
-      sha256 "570cf5cce5c207a9b6566ddc49405aa23d808de713bb159318001f57fe4dfefb"
+      sha256 "3c94fc92a61e230b2a0e3a960537314d51c924a01a3b96b3950f8041ec45be8d"
       url "https://github.com/PixiBixi/gopen/releases/download/v#{version}/gopen_#{version}_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a35186c0745bd289f364f13674b48ae381364676ba41e8a59547c72380f274f6"
+      sha256 "39d309effdc797c9f55c893dbd8a5fac527f204d67c3dedca76d8202b946a285"
       url "https://github.com/PixiBixi/gopen/releases/download/v#{version}/gopen_#{version}_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "361c49260e01133f8a2e3f9cc53b250e5fcfd3e015ee6613902de6cbe0744c06"
+      sha256 "34e39cc08e4ffa59881bf5c07d37b5dd31726c3f338c039c3e7f9767f6b87e49"
       url "https://github.com/PixiBixi/gopen/releases/download/v#{version}/gopen_#{version}_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "6035a6bab8437b0085eaeb35dc1f5a96e284bcc391589ab11ded10dc253078ab"
+      sha256 "7a2badceffcdfedfe04058855bb9cb58c2fddc3f876fea8eb21381f261cfc6e7"
       url "https://github.com/PixiBixi/gopen/releases/download/v#{version}/gopen_#{version}_Linux_x86_64.tar.gz"
     end
   end
@@ -39,5 +39,5 @@ cask "gopen" do
 
   binary "gopen"
 
-  # No zap stanza required
+  zap :not_required
 end
